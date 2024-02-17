@@ -323,9 +323,7 @@ function drawSandParticles() {
 function animate() {
 
     if (drawSandParticles() === false) {
-        setTimeout(function() {
-            animate();
-        }, 100);
+        requestAnimationFrame(animate);
     }
 }
 
